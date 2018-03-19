@@ -1,3 +1,0 @@
-src/util/TreeNode.java
-src/binarytree/TreePrinter.java
-src/start/MainStart.java
