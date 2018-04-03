@@ -32,7 +32,7 @@ public class HeapSort {
     /**
      * 根据无序数组生成小根堆
      */
-    public ArrayList<Integer> buildMinHeap(int[] A){
+    private ArrayList<Integer> buildMinHeap(int[] A){
         ArrayList<Integer> list = new ArrayList<>(A.length);
         list.add(0);
         for (int i=0; i < A.length; i++) {
@@ -52,7 +52,7 @@ public class HeapSort {
         return list;
     }
 
-    public int minHeapify(List<Integer> list) {
+    private int minHeapify(List<Integer> list) {
         int len = list.size();
         int cur = 1;
         int left = cur * 2,right = cur * 2 + 1;
@@ -93,7 +93,7 @@ public class HeapSort {
     }
 
 
-    public void swapList(List<Integer> list, int a, int b) {
+    private void swapList(List<Integer> list, int a, int b) {
         int temp = list.get(a);
         list.set(a,list.get(b));
         list.set(b,temp);

@@ -16,14 +16,14 @@ public class QuickSort {
         return A;
     }
     
-    public void sort (int[] A, int lo, int hi) {
+    private void sort (int[] A, int lo, int hi) {
         if (hi <= lo) return;
         int j = partition (A, lo, hi);
         sort(A, lo, j-1);
         sort(A, j+1, hi); 
     }
     
-    public int partition (int[] A, int lo, int hi) {
+    private int partition (int[] A, int lo, int hi) {
         int i = lo, j = hi+1;
         int v = A[lo];
         while (true) {
