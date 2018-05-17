@@ -60,9 +60,4 @@ public class MaxTree {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        MaxTree m = new MaxTree();
-        m.buildMaxTree(new int[]{340,1387,2101,847,1660,733,36,528},8);
-    }
 }
